@@ -36,7 +36,7 @@ it("TC03 Search and Reply to Ticket", () => {
     cy.log('Running test 4');
 
     // Login
-    cy.visit("https://internal.ticket.mylabsid.com/panel/dashboard");
+    cy.visit("***************************");
     cy.get("#client_login").click(); // Using ID
     cy.get("#login_form_user_name").type(Cypress.env("user_name"));
     cy.get("#login_form_password").type(Cypress.env("password"), { log: false });
