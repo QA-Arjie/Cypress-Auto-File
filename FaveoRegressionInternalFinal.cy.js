@@ -55,7 +55,7 @@ describe('Faveo Regression Test', () => {
   
     // Test case 1: Create new Ticket
     it('TC01: Create Ticket', () => {
-        cy.visit('https://internal.ticket.mylabsid.com/panel/newticket')
+        cy.visit('*****************************')
           cy.get('.card-title').should('be.visible')
           // Populate Form
           cy.get('#Requester > .col-md-2 > .v-popper--has-tooltip').should('be.visible')
@@ -105,7 +105,7 @@ describe('Faveo Regression Test', () => {
 
         // Test Case 2: Search and Reply to Created ticket
     it('TC02: Reply to Ticket', () => {
-        cy.visit('https://internal.ticket.mylabsid.com/panel/dashboard')
+        cy.visit('***********************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
@@ -147,7 +147,7 @@ describe('Faveo Regression Test', () => {
 
     // Test Case 3: Add Internal Notes
     it('TC03: Add Internal Notes', () => {
-        cy.visit('https://internal.ticket.mylabsid.com/panel/dashboard')
+        cy.visit('*************************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
@@ -180,7 +180,7 @@ describe('Faveo Regression Test', () => {
   
         // Test Case 4: Resolved Ticket
     it('TC04: Resolved Ticket', () => {
-        cy.visit('https://internal.ticket.mylabsid.com/panel/dashboard')
+        cy.visit('*********************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
@@ -216,7 +216,7 @@ describe('Faveo Regression Test', () => {
 
     // Test Case 5: Fork Ticket
     it('TC05: Fork Ticket', () => {
-        cy.visit('https://internal.ticket.mylabsid.com/panel/dashboard')
+        cy.visit('********************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
