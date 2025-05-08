@@ -55,7 +55,7 @@ describe('Faveo Prod Test', () => {
   
     // Test case 1: Create new Ticket
     it('TC01: Create Ticket', () => {
-        cy.visit('https://ticketing.myrepublic.com.sg/panel/newticket')
+        cy.visit('*************')
           cy.get('.card-title').should('be.visible')
           // Form
           cy.get('#vs1__combobox > .vs__selected-options > #dynamic-select').type('Test Form for Auto');
@@ -137,7 +137,7 @@ describe('Faveo Prod Test', () => {
 
     // Test Case 3: Add Internal Notes
     it('TC03: Add Internal Notes', () => {
-        cy.visit('https://ticketing.myrepublic.com.sg/panel/dashboard')
+        cy.visit('*********************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
@@ -170,7 +170,7 @@ describe('Faveo Prod Test', () => {
   
         // Test Case 4: Resolved Ticket
     it('TC04: Resolved Ticket', () => {
-        cy.visit('https://ticketing.myrepublic.com.sg/panel/dashboard')
+        cy.visit('*********************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
@@ -206,7 +206,7 @@ describe('Faveo Prod Test', () => {
 
     // Test Case 5: Fork Ticket
     it('TC05: Fork Ticket', () => {
-        cy.visit('https://ticketing.myrepublic.com.sg/panel/dashboard')
+        cy.visit('******************************************')
         cy.get('div > .fas').click()
         cy.get('.input-group > .form-control').clear()
         cy.get('.input-group > .form-control').type(`${createdTicketSubject}{enter}`).should('have.value', createdTicketSubject); // Assertion to verify the input value
