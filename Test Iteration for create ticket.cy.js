@@ -55,7 +55,7 @@ describe('Faveo Regression Test', () => {
     // Test case 1: Create Ticket (with iteration)
     ticketData.forEach(({ requester, subject }) => {
         it(`TC01: Create Ticket for ${subject}`, () => {
-            cy.visit('https://internal.ticket.mylabsid.com/panel/newticket');
+            cy.visit('***********************************');
             cy.get('.card-title').should('be.visible');
 
             // Populate Form
