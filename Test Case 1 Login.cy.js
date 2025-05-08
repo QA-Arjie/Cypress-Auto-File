@@ -8,7 +8,7 @@ describe('Faveotest', () => {
 
   // Test Case #1: Login
 it('TC01 Login', () => {
-  cy.visit("https://internal.ticket.mylabsid.com/home");
+  cy.visit("********************");
   cy.get("#client_login").click();
   cy.get("#login_form_user_name").type(Cypress.env("user_name"));
   cy.get("#login_form_password").type(Cypress.env("password"), { log: false });
